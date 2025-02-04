@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #a7a6a6;
+    color: #1b8d93;
+    padding: 20px;
+}
+
+/* Peamine konteiner */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Pealkiri */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0eade2;
+    margin-bottom: 20px;
+}
+
+/* Navigeerimine */
+nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #17c77e;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+}
+
+/* Kaalutavad kaardid või sektsioonid */
+section {
+    background-color: #121111;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fdfdfd;
+}
+
+/* Jalg */
+footer {
+    background-color: #333;
+    color: #14e5b1;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Kergesti kohandatav ruudustik */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(199, 121, 144, 0.1);
+    border-radius: 8px;
+}
+
+/* Responsiivsus */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
